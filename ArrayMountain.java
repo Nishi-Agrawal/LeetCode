@@ -1,5 +1,11 @@
 /*
+* @author: Nishi Agrawal
+*/
+
+/*
+* Leetcode link - https://leetcode.com/problems/valid-mountain-array/
 *
+* Q - Given an array of integers arr, return true if and only if it is a valid mountain array.
 */
 
 public class ArrayMountain {
@@ -25,7 +31,7 @@ public class ArrayMountain {
             if((i+1) <= (arr.length-1) ){
                 previous = arr[i];
                 i++;
-                if(previous < arr[i]) {
+                if(previous <= arr[i]) {
                 	return false;
                 }
             }
